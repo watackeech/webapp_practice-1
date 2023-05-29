@@ -26,16 +26,23 @@
                     </td>
                 </tr>
                 <tr>
+                    <form id="interest_form">
                     <th>アンケート</th>
                     <td>
                         語源に興味ありますか？<br>
                         <dl>
                             <dt>&lt;お名前&gt;</dt>
-                                <dd></dd>
+                                <dd>
+                                    <input type="text" name="customer">
+                                </dd>
                             <dt>選択してください</dt>
-                                <dd>興味あり！ 興味なし・・・</dd>
+                                <dd>
+                                    <input type="radio" name="interest" value="yes">興味あり
+                                    <input type="radio" name="interest" value="no">興味なし
+                                </dd>
                         </dl>
-                        送信
+                    </form>
+                        <button type="submit" name="question" value="click_submit" form="interest_form">送信</button>
                     </td>
                 </tr>
             </table>
