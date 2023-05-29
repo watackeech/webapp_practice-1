@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    font-family: "メイリオ", sans-serif;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+footer {
+    text-align: right;
+}
+
+#question {
+    font-weight: bold;
+}
