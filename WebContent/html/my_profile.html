@@ -5,43 +5,56 @@
         <title>自己紹介ページ</title>
     </head>
     <body>
-        <div><h2>新入社員自己紹介サイト</h2></div>
-        <div>
-            <img src="../img/enoki.png" alt="自己紹介写真" width="300"><br>
+        <header>
+            <div><h2>新入社員自己紹介サイト</h2></div>
+        </header>
+        <article>
+            <div>
+                <img src="../img/enoki.png" alt="自己紹介写真" width="300"><br>
 
-            <table border="1">
-                <tr>
-                    <th>名前</th> <td>佐藤 楓</td>
-                </tr>
-                <tr>
-                    <th>出身地</th> <td>福岡県</td>
-                </tr>
-                <tr>
-                    <th>自己アピール</th>
-                    <td>
-                        <p><ul>
-                        <li>今日もお研修がんばるぞ！<br>
-                        <li>最近は<a href="https://www.instagram.com/" >Instagram</a>でコミットしてます（・∀・）ﾆﾔﾆﾔ
-                        </ul></p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>アンケート</th>
-                    <td>
-                        語源に興味ありますか？<br>
-                        <dl>
-                            <dt>&lt;お名前&gt;</dt>
-                                <dd></dd>
-                            <dt>選択してください</dt>
-                                <dd>興味あり！ 興味なし・・・</dd>
-                        </dl>
-                        送信
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            (c) Enoki
-        </div>
+                <table border="1">
+                    <tr>
+                        <th>名前</th> <td>佐藤 楓</td>
+                    </tr>
+                    <tr>
+                        <th>出身地</th> <td>福岡県</td>
+                    </tr>
+                    <tr>
+                        <th>自己アピール</th>
+                        <td>
+                            <p><ul>
+                            <li>今日もお研修がんばるぞ！<br>
+                            <li>最近は<a href="https://www.instagram.com/" >Instagram</a>でコミットしてます（・∀・）ﾆﾔﾆﾔ
+                            </ul></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <form id="interest_form">
+                        <th>アンケート</th>
+                        <td>
+                            語源に興味ありますか？<br>
+                            <dl>
+                                <dt>&lt;お名前&gt;</dt>
+                                    <dd>
+                                        <input type="text" name="customer">
+                                    </dd>
+                                <dt>選択してください</dt>
+                                    <dd>
+                                        <input type="radio" name="interest" value="yes">興味あり
+                                        <input type="radio" name="interest" value="no">興味なし
+                                    </dd>
+                            </dl>
+                        </form>
+                            <button type="submit" name="question" value="click_submit" form="interest_form">送信</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <footer>
+            <div>
+                <small>&copy;Enoki</small>
+            </div>
+        </footer>
     </body>
 </html>
